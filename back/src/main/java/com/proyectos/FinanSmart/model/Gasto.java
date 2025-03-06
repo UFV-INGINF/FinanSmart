@@ -4,11 +4,13 @@ public class Gasto {
     private String id;
     private int monto;
 
+    // Constructor
     public Gasto(String id, int monto) {
         this.id = id;
         this.monto = monto;
     }
 
+    // Getter n Setter
     public String getId() {
         return id;
     }
@@ -25,6 +27,7 @@ public class Gasto {
         this.monto = monto;
     }
 
+    // To String
     @Override
     public String toString() {
         return "Gasto{" +
