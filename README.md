@@ -1,7 +1,3 @@
-Aquí tienes el contenido base del **README.md** para tu proyecto **FinanSmart**:
-
----
-
 # **FinanSmart - Gestión Inteligente de Finanzas Personales**  
 
 📌 **Proyecto desarrollado en la asignatura Proyectos II**  
@@ -95,5 +91,3 @@ docker-compose up -d
 
 ## 📜 **Licencia**  
 Este proyecto es de uso académico y no tiene una licencia específica de distribución. Pero porfa, de momento, mejor no lo uses 😁✌️. 
-
----
