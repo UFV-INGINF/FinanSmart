@@ -1,38 +1,27 @@
 package com.proyectos.FinanSmart.model;
 
+import jakarta.persistence.*;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "gastos")
+@Data
 public class Gasto {
-    private String id;
-    private int monto;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //  la base de datos generará automáticamente el valor del id (autoincremental).
 
-    // Constructor
-    public Gasto(String id, int monto) {
-        this.id = id;
-        this.monto = monto;
-    }
+    private int id;
+    private Double monto;
+    private String categoria;
+    private LocalDateTime fecha_gasto;
 
-    // Getter n Setter
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public int getMonto() {
-        return monto;
-    }
-
-    public void setMonto(int monto) {
-        this.monto = monto;
-    }
-
-    // To String
-    @Override
-    public String toString() {
-        return "Gasto{" +
-                "id='" + id + '\'' +
-                ", monto=" + monto +
-                '}';
-    }
+    // Relación con Usuario (Muchos ingresos pueden pertenecer a un usuario)
+    @ManyToOne
+    //"usuario_id" será el nombre de la columna en la tabla gasto.
+    // nullable = false indica que un ingreso no puede existir sin un usuario.
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuario;
 }
