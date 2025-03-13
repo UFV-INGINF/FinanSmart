@@ -24,6 +24,7 @@ public class LoginView extends VerticalLayout {
     private Button registerButton;
 
     public LoginView() {
+        addClassName("login-content");
         // Configuración del layout para centrar el contenido
         setSizeFull();
         setAlignItems(Alignment.CENTER);
@@ -41,6 +42,7 @@ public class LoginView extends VerticalLayout {
         // Botón de login
         loginButton = new Button("Login");
         loginButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+        loginButton.addClassName("button");
 
         // Botón para ir al registro
         registerButton = new Button("¿No tienes cuenta? Regístrate");
