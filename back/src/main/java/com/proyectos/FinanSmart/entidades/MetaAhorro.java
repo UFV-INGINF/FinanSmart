@@ -1,22 +1,25 @@
-package com.proyectos.FinanSmart.model;
+package com.proyectos.FinanSmart.entidades;
 
+
+import com.fs.FinanSmart.enums.Estado;
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "gastos")
+@Table(name = "metas")
 @Data
-public class Gasto {
+public class MetaAhorro {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //  la base de datos generará automáticamente el valor del id (autoincremental).
 
-    private int id;
-    private Double monto;
-    private String categoria;
-    private LocalDateTime fecha_gasto;
+    private Double monto_objetivo;
+    @Enumerated(EnumType.STRING) //Indica que se guardará como texto en la BBDD
+    private Estado estado;
+    private LocalDateTime fecha_limite;
 
     // Relación con Usuario (Muchos ingresos pueden pertenecer a un usuario)
     @ManyToOne
