@@ -2,8 +2,8 @@ package com.proyectos.FinanSmart.controladores;
 
 import java.time.LocalDateTime;
 
-import com.fs.FinanSmart.entidades.Ingreso;
-import com.fs.FinanSmart.servicios.*;
+import com.proyectos.FinanSmart.entidades.Ingreso;
+import com.proyectos.FinanSmart.servicios.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

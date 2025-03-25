@@ -1,9 +1,9 @@
 package com.proyectos.FinanSmart.servicios;
 
-import com.fs.FinanSmart.entidades.Ingreso;
-import com.fs.FinanSmart.interfaz.IngresoRepository;
-import com.fs.FinanSmart.entidades.Usuario;
-import com.fs.FinanSmart.interfaz.UsuarioRepository;
+import com.proyectos.FinanSmart.entidades.Ingreso;
+import com.proyectos.FinanSmart.interfaz.IngresoRepository;
+import com.proyectos.FinanSmart.entidades.Usuario;
+import com.proyectos.FinanSmart.interfaz.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.time.LocalDateTime;
 

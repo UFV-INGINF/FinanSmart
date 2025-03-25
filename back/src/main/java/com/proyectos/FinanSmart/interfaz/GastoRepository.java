@@ -1,7 +1,7 @@
 package com.proyectos.FinanSmart.interfaz;
 
 
-import com.fs.FinanSmart.entidades.Gasto;
+import com.proyectos.FinanSmart.entidades.Gasto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,9 +1,9 @@
 package com.proyectos.FinanSmart.controladores;
 
 
-import com.fs.FinanSmart.entidades.MetaAhorro;
-import com.fs.FinanSmart.enums.Estado;
-import com.fs.FinanSmart.servicios.MetaAhorroService;
+import com.proyectos.FinanSmart.entidades.MetaAhorro;
+import com.proyectos.FinanSmart.enums.Estado;
+import com.proyectos.FinanSmart.servicios.MetaAhorroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

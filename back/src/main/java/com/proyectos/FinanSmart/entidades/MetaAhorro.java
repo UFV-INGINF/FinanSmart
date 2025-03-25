@@ -1,7 +1,7 @@
 package com.proyectos.FinanSmart.entidades;
 
 
-import com.fs.FinanSmart.enums.Estado;
+import com.proyectos.FinanSmart.enums.Estado;
 import jakarta.persistence.*;
 import lombok.Data;
 

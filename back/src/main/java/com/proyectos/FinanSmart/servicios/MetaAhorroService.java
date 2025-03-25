@@ -1,10 +1,10 @@
 package com.proyectos.FinanSmart.servicios;
 
-import com.fs.FinanSmart.entidades.MetaAhorro;
-import com.fs.FinanSmart.entidades.Usuario;
-import com.fs.FinanSmart.enums.Estado;
-import com.fs.FinanSmart.interfaz.MetaAhorroRepository;
-import com.fs.FinanSmart.interfaz.UsuarioRepository;
+import com.proyectos.FinanSmart.entidades.MetaAhorro;
+import com.proyectos.FinanSmart.entidades.Usuario;
+import com.proyectos.FinanSmart.enums.Estado;
+import com.proyectos.FinanSmart.interfaz.MetaAhorroRepository;
+import com.proyectos.FinanSmart.interfaz.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;

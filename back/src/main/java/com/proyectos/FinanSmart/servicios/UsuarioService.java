@@ -1,7 +1,7 @@
 package com.proyectos.FinanSmart.servicios;
 
-import com.fs.FinanSmart.entidades.Usuario;
-import com.fs.FinanSmart.interfaz.UsuarioRepository;
+import com.proyectos.FinanSmart.entidades.Usuario;
+import com.proyectos.FinanSmart.interfaz.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

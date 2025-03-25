@@ -1,8 +1,8 @@
 package com.proyectos.FinanSmart.controladores;
 
 
-import com.fs.FinanSmart.entidades.Gasto;
-import com.fs.FinanSmart.servicios.GastoService;
+import com.proyectos.FinanSmart.entidades.Gasto;
+import com.proyectos.FinanSmart.servicios.GastoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,7 +1,7 @@
 package com.proyectos.FinanSmart.controladores;
 
-import com.fs.FinanSmart.entidades.Usuario;
-import com.fs.FinanSmart.servicios.*;
+import com.proyectos.FinanSmart.entidades.Usuario;
+import com.proyectos.FinanSmart.servicios.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
