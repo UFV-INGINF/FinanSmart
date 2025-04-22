@@ -53,62 +53,31 @@
         <main class="main-content">
           <h2 class="main-title">Configuración</h2>
         
-          <!-- DATOS PERSONALES -->
+          <!-- NUEVA ENTRADA -->
           <div class="user-card">
-            <h4 class="section-title">DATOS PERSONALES:</h4>
-            <div class="section-group">
-              <div class="data-row">
-                <label>NOMBRE COMPLETO:</label>
-                <span class="static-field">Rodrigo Ibáñez Calvo</span>
+            <form id="entradaForm" class="formulario-nueva-entrada">
+              <h4 class="section-title mb-3 text-center">Nueva Entrada:</h4>
+              <div class="mb-3">
+                <input type="number" class="form-control campo-formulario" id="ingresos" placeholder="Ingresos totales de este mes..." required />
               </div>
-              <div class="data-row">
-                <label>EDAD:</label>
-                <span class="static-field">21</span>
+              <div class="mb-3">
+                <input type="number" class="form-control campo-formulario" id="comida" placeholder="Gastos en comida de este mes..." required />
               </div>
-              <div class="data-row">
-                <label>EMAIL:</label>
-                <span class="static-field">rodrigo@email.com</span>
+              <div class="mb-3">
+                <input type="number" class="form-control campo-formulario" id="ocio" placeholder="Gastos en ocio de este mes..." required />
               </div>
-            </div>
+              <div class="mb-4">
+                <input type="number" class="form-control campo-formulario" id="otros" placeholder="Otros Gastos de este mes..." required />
+              </div>
+          
+              <button type="submit" class="btn w-100 send">AÑADIR ENTRADA</button>
+            </form>
           </div>
           
-        
-          <!-- DATOS FINANCIEROS -->
-          <div class="card user-card">
-            <h4 class="section-title">Datos Financieros</h4>
-            <div class="row gx-4 gy-3">
-              <div class="col-md-4">
-                <label class="form-label">Independiente:</label>
-                <div>
-                  <input type="radio" class="btn-check" name="independiente" id="indepSI" autocomplete="off" checked>
-                  <label class="btn btn-outline-success" for="indepSI">Sí</label>
-        
-                  <input type="radio" class="btn-check" name="independiente" id="indepNO" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="indepNO">No</label>
-                </div>
-              </div>
-        
-              <div class="col-md-4">
-                <label class="form-label">Situación Laboral:</label>
-                <div>
-                  <input type="radio" class="btn-check" name="laboral" id="trabajoSI" autocomplete="off" checked>
-                  <label class="btn btn-outline-success" for="trabajoSI">Con Trabajo</label>
-        
-                  <input type="radio" class="btn-check" name="laboral" id="trabajoNO" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="trabajoNO">Sin Trabajo</label>
-                </div>
-              </div>
-        
-              <div class="col-md-4">
-                <label class="form-label">Objetivo (€):</label>
-                <input type="number" class="form-control objetivo-input" placeholder="Ej: 5000">
-              </div>
-            </div>
-          </div>
-        
+
           <!-- NOTIFICACIONES -->
           <div class="card">
-            <h4 class="section-title">Gestión de Notificaciones</h4>
+            <h4 class="section-title text-center">Gestión de Notificaciones</h4>
         
             <div class="notification">
               <div class="notification-text">
@@ -141,12 +110,18 @@
         </main>
         
 
-      <!-- Footer -->
-      <footer class="footer">
-        <p>Contacta con Nosotros</p>
-        <p>&copy; FinanSmart UFV</p>
-      </footer>
-    </div>
+<!-- Footer -->
+<footer class="footer d-flex justify-content-between align-items-center px-4">
+  <a href="contactForm.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+    <i class="fa-regular fa-comments"></i>
+    <span>Contacta con Nosotros</span>
+  </a>
+  <div class="d-flex align-items-center gap-2">
+    <i class="fa-regular fa-registered"></i>
+    <span>FinanSmart - UFV</span>
+  </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
     <script src="js/newsletterConfig.js"></script>
