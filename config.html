@@ -11,33 +11,43 @@
   <body>
     <div class="container-fluid">
         <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="logo-container navbar-brand">
-                    <img src="img/logo.png" alt="Logo FinanSmart" width="40" height="40" class="d-inline-block align-text-top">
-                    <span class="ms-2">FinanSmart</span>
-                </div>
-  
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFinanSmart" aria-controls="navbarFinanSmart" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-  
-                <div class="collapse navbar-collapse justify-content-end" id="navbarFinanSmart">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-success text-white me-2" href="home.html">
-                                <i class="fa-solid fa-house"></i> HOME
-                            </a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link btn btn-success text-white" href="user.html">
-                                <i class="fa-solid fa-user"></i> PERFIL
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
+          <div class="container-fluid justify-content-between">
+            
+            <!-- Logo + Marca -->
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+              <img src="img/logo.png" alt="Logo FinanSmart" width="50" height="50" class="me-2">
+              <span class="fs-4 fw-bold">FinanSmart</span>
+            </a>
+        
+            <!-- Botón hamburguesa (responsive) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Opciones -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav d-flex align-items-center gap-2">
+                <li class="nav-item">
+                  <a class="nav-link btn-nav" href="home.html" id="nav-home">
+                    <i class="fa-solid fa-house"></i> HOME
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-nav" href="user.html" id="nav-perfil">
+                    <i class="fa-solid fa-user"></i> PERFIL
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-nav active" href="config.html" id="nav-config">
+                    <i class="fa-solid fa-gear"></i> CONFIGURACIÓN
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
+        
   
         <!-- Main Content -->
         <main class="main-content">
