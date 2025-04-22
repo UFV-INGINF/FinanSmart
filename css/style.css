@@ -1,0 +1,142 @@
+body {
+    background-color: #212529;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #212529 !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+#title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.buttonNav {
+    background-color: #0EAF21 !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 120px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttonNav:hover {
+    background-color: #0a7a17 !important;
+}
+
+/* Estructura principal */
+.main-content {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.main-content h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Card contenedora */
+.card {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px auto 100px auto;
+    width: 80%;
+    max-width: 1100px;
+}
+
+/* Cada bloque de notificación */
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos y textos alineados a la izquierda */
+.notification-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.notification h5 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.notification p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+/* Interruptor */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0EAF21;
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: #000;
+}
+
+/* Mensaje debajo del switch */
+.msg-switch {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #198754;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Botón cerrar sesión */
+.cerrar-btn {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.cerrar-btn:hover {
+    background-color: #bb2d3b;
+}
