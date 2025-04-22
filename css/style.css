@@ -127,20 +127,18 @@ body {
 
 /* ==== Datos de usuario (user-card) ==== */
 .section-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
-    color: #333;
+    color: #111;
+    margin-bottom: 0px; /* <-- reducido */
     text-align: left;
-    margin-bottom: 20px;
 }
 
-/* Agrupación estilo grid */
 .section-group {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    margin-top: 0; /* <-- quitamos espacio extra por si acaso */
 }
+
 
 /* Fila de datos */
 .data-row {
