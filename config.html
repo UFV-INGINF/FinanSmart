@@ -1,75 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Config FinanSmart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid">
         <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="logo-container navbar-brand">
-                    <img src="img/logo.png" alt="Logo FinanSmart" width="40" height="40" class="d-inline-block align-text-top">
-                    <span class="ms-2">FinanSmart</span>
-                </div>
-  
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFinanSmart" aria-controls="navbarFinanSmart" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-  
-                <div class="collapse navbar-collapse justify-content-end" id="navbarFinanSmart">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-success text-white me-2" href="home.html">
-                                <i class="fa-solid fa-house"></i> HOME
-                            </a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link btn btn-success text-white" href="user.html">
-                                <i class="fa-solid fa-user"></i> PERFIL
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
+          <div class="container-fluid justify-content-between">
+            
+            <!-- Logo + Marca -->
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+              <img src="img/logo.png" alt="Logo FinanSmart" width="50" height="50" class="me-2">
+              <span class="fs-4 fw-bold">FinanSmart</span>
+            </a>
+        
+            <!-- Botón hamburguesa (responsive) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Opciones -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav d-flex align-items-center gap-2">
+                <li class="nav-item">
+                  <a class="nav-link btn-nav" href="home.html" id="nav-home">
+                    <i class="fa-solid fa-house"></i> HOME
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-nav" href="user.html" id="nav-perfil">
+                    <i class="fa-solid fa-user"></i> PERFIL
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-nav active" href="config.html" id="nav-config">
+                    <i class="fa-solid fa-gear"></i> CONFIGURACIÓN
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
+        
   
         <!-- Main Content -->
         <main class="main-content">
-            <h2>Configuración</h2>
-            <div class="card">
-                <div class="notification">
-                    <h5>Notificaciones de ahorros</h5>
-                    <p>Recibe actualizaciones relacionadas con movimientos en tus ahorros.</p>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="notificacionesAhorros" checked>
-                        <label class="form-check-label" for="notificacionesAhorros"></label>
-                    </div>
-                </div>
-                <div class="notification">
-                    <h5>Notificaciones de metas</h5>
-                    <p>Recibe actualizaciones cuando hayas logrado tu objetivo.</p>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="notificacionesMetas" checked>
-                        <label class="form-check-label" for="notificacionesMetas"></label>
-                    </div>
-                </div>
-                <button class="btn-cerrar-sesion">Cerrar Sesión</button>
+          <h2 class="main-title">Configuración</h2>
+        
+          <!-- DATOS PERSONALES -->
+          <div class="user-card">
+            <h4 class="section-title">DATOS PERSONALES:</h4>
+            <div class="section-group">
+              <div class="data-row">
+                <label>NOMBRE COMPLETO:</label>
+                <span class="static-field">Rodrigo Ibáñez Calvo</span>
+              </div>
+              <div class="data-row">
+                <label>EDAD:</label>
+                <span class="static-field">21</span>
+              </div>
+              <div class="data-row">
+                <label>EMAIL:</label>
+                <span class="static-field">rodrigo@email.com</span>
+              </div>
             </div>
+          </div>
+          
+        
+          <!-- DATOS FINANCIEROS -->
+          <div class="card user-card">
+            <h4 class="section-title">Datos Financieros</h4>
+            <div class="row gx-4 gy-3">
+              <div class="col-md-4">
+                <label class="form-label">Independiente:</label>
+                <div>
+                  <input type="radio" class="btn-check" name="independiente" id="indepSI" autocomplete="off" checked>
+                  <label class="btn btn-outline-success" for="indepSI">Sí</label>
+        
+                  <input type="radio" class="btn-check" name="independiente" id="indepNO" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="indepNO">No</label>
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label class="form-label">Situación Laboral:</label>
+                <div>
+                  <input type="radio" class="btn-check" name="laboral" id="trabajoSI" autocomplete="off" checked>
+                  <label class="btn btn-outline-success" for="trabajoSI">Con Trabajo</label>
+        
+                  <input type="radio" class="btn-check" name="laboral" id="trabajoNO" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="trabajoNO">Sin Trabajo</label>
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <label class="form-label">Objetivo (€):</label>
+                <input type="number" class="form-control objetivo-input" placeholder="Ej: 5000">
+              </div>
+            </div>
+          </div>
+        
+          <!-- NOTIFICACIONES -->
+          <div class="card">
+            <h4 class="section-title">Gestión de Notificaciones</h4>
+        
+            <div class="notification">
+              <div class="notification-text">
+                <h5>Notificaciones de ahorros</h5>
+                <p>Recibe actualizaciones relacionadas con movimientos en tus ahorros.</p>
+              </div>
+              <div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="notificacionesAhorros" checked>
+                  <label class="form-check-label" for="notificacionesAhorros">Notificaciones de ahorros activadas</label>
+                </div>
+                <div id="msgAhorros" class="msg-switch"></div>
+              </div>
+            </div>
+        
+            <div class="notification">
+              <div class="notification-text">
+                <h5>Notificaciones de metas</h5>
+                <p>Recibe actualizaciones cuando hayas logrado tu objetivo.</p>
+              </div>
+              <div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="notificacionesMetas" checked>
+                  <label class="form-check-label" for="notificacionesMetas">Notificaciones de metas activadas</label>
+                </div>
+                <div id="msgMetas" class="msg-switch"></div>
+              </div>
+            </div>
+          </div>
         </main>
+        
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>Contacta con Nosotros</p>
-            <p>&copy; FinanSmart UFV</p>
-        </footer>
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Contacta con Nosotros</p>
+        <p>&copy; FinanSmart UFV</p>
+      </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
+    <script src="js/newsletterConfig.js"></script>
+  </body>
 </html>
