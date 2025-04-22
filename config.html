@@ -53,21 +53,31 @@
         <main class="main-content">
           <h2 class="main-title">Configuración</h2>
         
-          <!-- DATOS PERSONALES -->
+          <!-- NUEVA ENTRADA -->
           <div class="user-card">
-            <div class="formulario-nueva-entrada">
-              <h4 class="mb-4 fw-bold" id="newEntry">NUEVA ENTRADA:</h4>
-              <input type="number" class="form-control mb-3 campo-formulario" placeholder="Ingresos totales de este mes..." />
-              <input type="number" class="form-control mb-3 campo-formulario" placeholder="Gastos en comida de este mes..." />
-              <input type="number" class="form-control mb-3 campo-formulario" placeholder="Gastos en ocio de este mes..." />
-              <input type="number" class="form-control mb-4 campo-formulario" placeholder="Otros Gastos de este mes..." />
-              <button class="btn btn-success w-100 fw-bold">AÑADIR ENTRADA</button>
-            </div>
+            <form id="entradaForm" class="formulario-nueva-entrada">
+              <h4 class="section-title mb-3 text-center">Nueva Entrada:</h4>
+              <div class="mb-3">
+                <input type="number" class="form-control campo-formulario" id="ingresos" placeholder="Ingresos totales de este mes..." required />
+              </div>
+              <div class="mb-3">
+                <input type="number" class="form-control campo-formulario" id="comida" placeholder="Gastos en comida de este mes..." required />
+              </div>
+              <div class="mb-3">
+                <input type="number" class="form-control campo-formulario" id="ocio" placeholder="Gastos en ocio de este mes..." required />
+              </div>
+              <div class="mb-4">
+                <input type="number" class="form-control campo-formulario" id="otros" placeholder="Otros Gastos de este mes..." required />
+              </div>
+          
+              <button type="submit" class="btn w-100 send">AÑADIR ENTRADA</button>
+            </form>
           </div>
-        
+          
+
           <!-- NOTIFICACIONES -->
           <div class="card">
-            <h4 class="section-title">Gestión de Notificaciones</h4>
+            <h4 class="section-title text-center">Gestión de Notificaciones</h4>
         
             <div class="notification">
               <div class="notification-text">
@@ -100,12 +110,18 @@
         </main>
         
 
-      <!-- Footer -->
-      <footer class="footer">
-        <p>Contacta con Nosotros</p>
-        <p>&copy; FinanSmart UFV</p>
-      </footer>
-    </div>
+<!-- Footer -->
+<footer class="footer d-flex justify-content-between align-items-center px-4">
+  <a href="contactForm.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+    <i class="fa-regular fa-comments"></i>
+    <span>Contacta con Nosotros</span>
+  </a>
+  <div class="d-flex align-items-center gap-2">
+    <i class="fa-regular fa-registered"></i>
+    <span>FinanSmart - UFV</span>
+  </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
     <script src="js/newsletterConfig.js"></script>
