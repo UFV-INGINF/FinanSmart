@@ -258,23 +258,24 @@ body {
     justify-content: flex-start;  /* <-- ALINEACIÓN IZQUIERDA */
     align-items: center;          /* <-- CENTRADO VERTICAL */
     text-align: left;
-  }
+}
   
 .user-data-balanced {
     display: flex;
     justify-content: center;
-    gap: 40px; /* REDUCIDO el espacio */
+    gap: 20px;
     flex-wrap: wrap;
   }
   
-  .user-data-balanced .user-card {
-    flex: 1 1 520px; /* AUMENTADO un poco el ancho */
+.user-data-balanced .user-card {
+    flex: 1 1 520px;
     max-width: 520px;
-  }
+}
+  
   
   
   /* Botón central alineado con tarjetas */
-  .modify-btn {
+.modify-btn {
     background-color: #0EAF21;
     color: white;
     font-weight: 600;
@@ -287,15 +288,15 @@ body {
     max-width: 520px;
     margin: auto;
     display: block;
-  }
+}
   
   
-  .modify-btn:hover {
+.modify-btn:hover {
     background-color: #0a7917;
-  }
+}
   
-  /* Responsive */
-  @media (max-width: 992px) {
+/* Responsive */
+@media (max-width: 992px) {
     .user-data-balanced {
       flex-direction: column;
       align-items: center;
@@ -304,9 +305,7 @@ body {
     .modify-btn {
       width: 80%;
     }
-  }
-  
-  
+}
 
 /* ==== Footer ==== */
 .footer {
