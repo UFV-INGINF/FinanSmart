@@ -55,54 +55,13 @@
         
           <!-- DATOS PERSONALES -->
           <div class="user-card">
-            <h4 class="section-title">DATOS PERSONALES:</h4>
-            <div class="section-group">
-              <div class="data-row">
-                <label>NOMBRE COMPLETO:</label>
-                <span class="static-field">Rodrigo Ibáñez Calvo</span>
-              </div>
-              <div class="data-row">
-                <label>EDAD:</label>
-                <span class="static-field">21</span>
-              </div>
-              <div class="data-row">
-                <label>EMAIL:</label>
-                <span class="static-field">rodrigo@email.com</span>
-              </div>
-            </div>
-          </div>
-          
-        
-          <!-- DATOS FINANCIEROS -->
-          <div class="card user-card">
-            <h4 class="section-title">Datos Financieros</h4>
-            <div class="row gx-4 gy-3">
-              <div class="col-md-4">
-                <label class="form-label">Independiente:</label>
-                <div>
-                  <input type="radio" class="btn-check" name="independiente" id="indepSI" autocomplete="off" checked>
-                  <label class="btn btn-outline-success" for="indepSI">Sí</label>
-        
-                  <input type="radio" class="btn-check" name="independiente" id="indepNO" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="indepNO">No</label>
-                </div>
-              </div>
-        
-              <div class="col-md-4">
-                <label class="form-label">Situación Laboral:</label>
-                <div>
-                  <input type="radio" class="btn-check" name="laboral" id="trabajoSI" autocomplete="off" checked>
-                  <label class="btn btn-outline-success" for="trabajoSI">Con Trabajo</label>
-        
-                  <input type="radio" class="btn-check" name="laboral" id="trabajoNO" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="trabajoNO">Sin Trabajo</label>
-                </div>
-              </div>
-        
-              <div class="col-md-4">
-                <label class="form-label">Objetivo (€):</label>
-                <input type="number" class="form-control objetivo-input" placeholder="Ej: 5000">
-              </div>
+            <div class="formulario-nueva-entrada">
+              <h4 class="mb-4 fw-bold" id="newEntry">NUEVA ENTRADA:</h4>
+              <input type="number" class="form-control mb-3 campo-formulario" placeholder="Ingresos totales de este mes..." />
+              <input type="number" class="form-control mb-3 campo-formulario" placeholder="Gastos en comida de este mes..." />
+              <input type="number" class="form-control mb-3 campo-formulario" placeholder="Gastos en ocio de este mes..." />
+              <input type="number" class="form-control mb-4 campo-formulario" placeholder="Otros Gastos de este mes..." />
+              <button class="btn btn-success w-100 fw-bold">AÑADIR ENTRADA</button>
             </div>
           </div>
         
