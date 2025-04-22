@@ -51,74 +51,75 @@
   
         <!-- Main Content -->
         <main class="main-content">
-          <h2 class="main-title">Datos de Usuario</h2>
-        
-          <!-- DATOS PERSONALES -->
-          <div class="user-card">
-            <h4 class="section-title">DATOS PERSONALES:</h4>
-            <div class="section-group">
-              <div class="data-row">
-                <label>NOMBRE COMPLETO:</label>
-                <span class="static-field">Rodrigo Ibáñez Calvo</span>
-              </div>
-              <div class="data-row">
-                <label>EDAD:</label>
-                <span class="static-field">21</span>
-              </div>
-              <div class="data-row">
-                <label>EMAIL:</label>
-                <span class="static-field">rodrigo@email.com</span>
-              </div>
-            </div>
-          </div>
+            <h2 class="main-title">Datos de Usuario</h2>
           
-        
-          <!-- DATOS FINANCIEROS -->
-          <div class="card user-card">
-            <h4 class="section-title">Datos Financieros</h4>
-            <div class="row gx-4 gy-3">
-              <div class="col-md-4">
-                <label class="form-label">Independiente:</label>
-                <div>
-                  <input type="radio" class="btn-check" name="independiente" id="indepSI" autocomplete="off" checked>
-                  <label class="btn btn-outline-success" for="indepSI">Sí</label>
-        
-                  <input type="radio" class="btn-check" name="independiente" id="indepNO" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="indepNO">No</label>
+            <div class="user-data-balanced">
+              <!-- DATOS PERSONALES -->
+              <div class="user-card">
+                <h4 class="section-title text-center">DATOS PERSONALES:</h4>
+                <div class="data-row">
+                  <label>NOMBRE COMPLETO:</label>
+                  <span class="static-field">Rodrigo Ibáñez Calvo</span>
+                </div>
+                <div class="data-row">
+                  <label>EDAD:</label>
+                  <span class="static-field">21</span>
+                </div>
+                <div class="data-row">
+                  <label>EMAIL:</label>
+                  <span class="static-field">rodrigo@email.com</span>
+                </div>
+                <div class="data-row">
+                  <label>CONTRASEÑA:</label>
+                  <span class="static-field">**************</span>
                 </div>
               </div>
-        
-              <div class="col-md-4">
-                <label class="form-label">Situación Laboral:</label>
-                <div>
-                  <input type="radio" class="btn-check" name="laboral" id="trabajoSI" autocomplete="off" checked>
-                  <label class="btn btn-outline-success" for="trabajoSI">Con Trabajo</label>
-        
-                  <input type="radio" class="btn-check" name="laboral" id="trabajoNO" autocomplete="off">
-                  <label class="btn btn-outline-secondary" for="trabajoNO">Sin Trabajo</label>
+          
+              <!-- DATOS FINANCIEROS -->
+              <div class="user-card">
+                <h4 class="section-title text-center">DATOS FINANCIEROS:</h4>
+                <div class="data-row">
+                  <label>INDEPENDIENTE:</label>
+                  <div>
+                    <input type="radio" class="btn-check" name="independiente" id="indepSI" checked>
+                    <label class="btn btn-outline-success" for="indepSI">Sí</label>
+                    <input type="radio" class="btn-check" name="independiente" id="indepNO">
+                    <label class="btn btn-outline-secondary" for="indepNO">No</label>
+                  </div>
                 </div>
-              </div>
-        
-              <div class="col-md-4">
-                <label class="form-label">Objetivo (€):</label>
-                <input type="number" class="form-control objetivo-input" placeholder="Ej: 5000">
+                <div class="data-row">
+                  <label>SITUACIÓN LABORAL:</label>
+                  <div>
+                    <input type="radio" class="btn-check" name="laboral" id="trabajoSI" checked>
+                    <label class="btn btn-outline-success" for="trabajoSI">Con Trabajo</label>
+                    <input type="radio" class="btn-check" name="laboral" id="trabajoNO">
+                    <label class="btn btn-outline-secondary" for="trabajoNO">Sin Trabajo</label>
+                  </div>
+                </div>
+                <div class="data-row">
+                  <label>OBJETIVO (€):</label>
+                  <input type="number" class="objetivo-input" placeholder="Ej: 5000">
+                </div>
               </div>
             </div>
-          </div>        
+          
+            <div class="text-center mt-4">
+              <button class="btn modify-btn">MODIFICAR DATOS</button>
+            </div>
         </main>
+                  
         
-
-<!-- Footer -->
-<footer class="footer d-flex justify-content-between align-items-center px-4">
-    <a href="contactForm.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
-      <i class="fa-regular fa-comments"></i>
-      <span>Contacta con Nosotros</span>
-    </a>
-    <div class="d-flex align-items-center gap-2">
-      <i class="fa-regular fa-registered"></i>
-      <span>FinanSmart - UFV</span>
-    </div>
-  </footer>
+        <!-- Footer -->
+        <footer class="footer d-flex justify-content-between align-items-center px-4">
+            <a href="contactForm.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                <i class="fa-regular fa-comments"></i>
+                <span>Contacta con Nosotros</span>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <i class="fa-regular fa-registered"></i>
+                <span>FinanSmart - UFV</span>
+            </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
     <script src="js/newsletterConfig.js"></script>

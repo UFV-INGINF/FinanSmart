@@ -245,6 +245,50 @@ body {
     border-color: #0a7a17;
 }
 
+/* ==== Contenedor de 2 columnas (Datos personales / financieros -> USER) ==== */
+/* ==== Estilo dos columnas equilibradas ==== */
+.user-data-balanced {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .user-data-balanced .user-card {
+    flex: 1 1 480px;
+    max-width: 500px;
+  }
+  
+  /* Botón de modificar */
+  .modify-btn {
+    background-color: #0EAF21;
+    color: white;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modify-btn:hover {
+    background-color: #0a7917;
+  }
+  
+  /* Responsive: stack en pantallas pequeñas */
+  @media (max-width: 992px) {
+    .user-data-balanced {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .modify-btn {
+      width: 80%;
+    }
+  }
+  
+  
+
 /* ==== Footer ==== */
 .footer {
     background-color: #212529;
