@@ -1,4 +1,22 @@
 /* ==== Estilos generales ==== */
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 94vh; /* ✅ exactamente el alto de la ventana */
+    overflow: hidden;
+  }
+  
+
+.main-content {
+    flex-grow: 1;
+    padding: 60px 30px 40px 30px; /* puedes ajustar el padding superior aquí */
+}
+
+
 /* Navbar fija arriba */
 .navbar.fixed-top {
     position: fixed;
@@ -245,6 +263,68 @@ body {
     border-color: #0a7a17;
 }
 
+/* ==== Contenedor de 2 columnas (Datos personales / financieros -> USER) ==== */
+.data-row span.static-field {
+    background-color: #e0e0e0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;  /* <-- ALINEACIÓN IZQUIERDA */
+    align-items: center;          /* <-- CENTRADO VERTICAL */
+    text-align: left;
+}
+  
+.user-data-balanced {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Reducción del espacio entre tarjetas */
+    flex-wrap: wrap;
+}
+
+.user-data-balanced .user-card {
+    flex: 1 1 520px;
+    max-width: 520px;
+    margin: 0; /* Elimina margen que añadía separación extra */
+}
+
+  
+/* Botón central alineado con tarjetas */
+.modify-btn {
+    background-color: #0EAF21;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    width: 520px; /* MISMO ANCHO que una tarjeta */
+    max-width: 520px;
+    margin: auto;
+    display: block;
+}
+  
+  
+.modify-btn:hover {
+    background-color: #0a7917;
+}
+  
+/* Responsive */
+@media (max-width: 992px) {
+    .user-data-balanced {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .modify-btn {
+      width: 80%;
+    }
+}
+
 /* ==== Footer ==== */
 .footer {
     background-color: #212529;
@@ -253,6 +333,7 @@ body {
     width: 100%;
     font-size: 14px;
     font-family: 'Segoe UI', sans-serif;
+    margin-top: auto; /* hace que el footer se empuje al final */
 }
 
 .footer i {
