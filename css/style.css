@@ -246,36 +246,55 @@ body {
 }
 
 /* ==== Contenedor de 2 columnas (Datos personales / financieros -> USER) ==== */
-/* ==== Estilo dos columnas equilibradas ==== */
+.data-row span.static-field {
+    background-color: #e0e0e0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;  /* <-- ALINEACIÓN IZQUIERDA */
+    align-items: center;          /* <-- CENTRADO VERTICAL */
+    text-align: left;
+  }
+  
 .user-data-balanced {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 40px; /* REDUCIDO el espacio */
     flex-wrap: wrap;
   }
   
   .user-data-balanced .user-card {
-    flex: 1 1 480px;
-    max-width: 500px;
+    flex: 1 1 520px; /* AUMENTADO un poco el ancho */
+    max-width: 520px;
   }
   
-  /* Botón de modificar */
+  
+  /* Botón central alineado con tarjetas */
   .modify-btn {
     background-color: #0EAF21;
     color: white;
-    padding: 12px 40px;
-    font-size: 16px;
     font-weight: 600;
     border: none;
+    padding: 12px 0;
+    font-size: 16px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    width: 520px; /* MISMO ANCHO que una tarjeta */
+    max-width: 520px;
+    margin: auto;
+    display: block;
   }
+  
   
   .modify-btn:hover {
     background-color: #0a7917;
   }
   
-  /* Responsive: stack en pantallas pequeñas */
+  /* Responsive */
   @media (max-width: 992px) {
     .user-data-balanced {
       flex-direction: column;
