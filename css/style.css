@@ -108,6 +108,10 @@ body {
     font-size: 15px;
     border-radius: 6px;
     transition: background-color 0.3s ease-in-out;
+    width: 520px; /* MISMO ANCHO que una tarjeta */
+    max-width: 520px;
+    margin: auto;
+    display: block;
   }
   
   .send:hover {
