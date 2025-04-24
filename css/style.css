@@ -6,7 +6,7 @@ html, body {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    height: 94vh; /* ✅ exactamente el alto de la ventana */
+    height: auto; /* ✅ exactamente el alto de la ventana */
     overflow: hidden;
   }
   
