@@ -27,10 +27,10 @@ body {
 
 .container {
     width: 100%;
-    min-height: 100vh;        /* at least full‐screen */
+    min-height: 100vh;        
     display: flex;
     justify-content: center;
-    align-items: flex-start;  /* keep card pinned to top of container */
+    align-items: flex-start;  
     
 }
 
@@ -182,7 +182,7 @@ input:focus {
 
 .image-side {
     flex: 1.5;
-    background-image: url("./img/fondoNumeros.jpg");
+    background-image: url("../img/fondoNumeros.jpg");
     background-size: cover;
     background-position: center;
     position: relative;

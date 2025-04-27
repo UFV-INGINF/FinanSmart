@@ -51,7 +51,7 @@ body {
 
 .image-side {
     flex: 1.5;
-    background-image: url("./img/fondoNumeros.jpg");
+    background-image: url("../img/fondoNumeros.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
