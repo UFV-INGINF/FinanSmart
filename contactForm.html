@@ -12,58 +12,52 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
-    <div class="container-fluid justify-content-between">
-
-      <!-- Logo + Marca -->
-      <a class="navbar-brand d-flex align-items-center" href="home.html">
-        <img src="img/logo.png" alt="Logo FinanSmart" width="50" height="50" class="me-2" />
-        <span class="fs-4 fw-bold">FinanSmart</span>
-      </a>
-
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Enlaces -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav d-flex align-items-center gap-2">
-          <li class="nav-item">
-            <a class="nav-link btn-nav" href="home.html" id="nav-home">
-              <i class="fa-solid fa-house"></i> HOME
+    <main>
+        <div class="container-fluid">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
+          <div class="container-fluid justify-content-between">
+            
+            <!-- Logo + Marca -->
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+              <img src="img/logo.png" alt="Logo FinanSmart" width="50" height="50" class="me-2">
+              <span class="fs-4 fw-bold">FinanSmart</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn-nav" href="user.html" id="nav-perfil">
-              <i class="fa-solid fa-user"></i> PERFIL
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn-nav" href="config.html" id="nav-config">
-              <i class="fa-solid fa-gear"></i> CONFIGURACIÓN
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        
+            <!-- Botón hamburguesa (responsive) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Opciones -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav d-flex align-items-center gap-2">
+                <li class="nav-item">
+                  <a class="nav-link btn-nav" href="home.html" id="nav-home">
+                    <i class="fa-solid fa-house"></i> HOME
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-nav" href="user.html" id="nav-perfil">
+                    <i class="fa-solid fa-user"></i> PERFIL
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-nav active" href="config.html" id="nav-config">
+                    <i class="fa-solid fa-gear"></i> CONFIGURACIÓN
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-    <!-- FORMULARIO DE CONTACTO -->
-    <main class="contacto-container">
         <form id="contact-form" class="contact-card">
             <h2 class="form-title">¿En qué podemos ayudarte?</h2>
 
             <input type="text" name="nombre" placeholder="Nombre completo" required />
             <input type="text" name="apellidos" placeholder="Apellidos" required />
-
-            <div class="input-email">
-                <span class="email-icon">@</span>
-                <input type="email" name="email" placeholder="Introduzca su email..." required>
-            </div>
-
+            <input type="email" name="email" placeholder="Introduzca su email..." required>
 
             <textarea name="mensaje" placeholder="Te escuchamos..." rows="5" required></textarea>
 
