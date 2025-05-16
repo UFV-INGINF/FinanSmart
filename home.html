@@ -6,7 +6,6 @@
         <title>Home</title>
         <link rel="stylesheet" href="./css/home.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     </head>
     <body>
         <div class="container-fluid">
@@ -49,8 +48,26 @@
             </nav>
 
             <!-- Main Content -->
-            <main>
-                
+            <main class="home-container">
+                <h1 class="bienvenida">
+                    Bienvenido de vuelta, <span id="user-nombre">Usuario</span>
+                </h1>
+
+                <div class="info-grid">
+                    <!-- Bloque 1: Ahorro con gráfica -->
+                    <section class="ahorro-section">
+                        <h2>Resumen de Ahorros</h2>
+                        <canvas id="graficaAhorros"></canvas>
+                        <a href="config.html" class="btn-nueva-entrada">Añadir nueva entrada</a>
+                    </section>
+
+                    <!-- Bloque 2: Plan financiero -->
+                    <section class="plan-section">
+                        <h2>Tu Plan Financiero</h2>
+                        <p id="metodo">Método recomendado: <strong>...</strong></p>
+                        <p>Total Ahorrado: <strong id="total-ahorrado">...</strong></p>
+                    </section>
+                </div>
             </main>
 
             <!-- Footer -->
