@@ -3,11 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cargando FinanSmart...</title>
-        <link rel="stylesheet" href="css">
+        <title>Home</title>
+        <link rel="stylesheet" href="./css/home.css">
     </head>
     <body>
+        <div class="container-fluid">
+            <!-- Header -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
+                <div class="container-fluid justify-content-between">
+            
+                    <!-- Logo + Marca -->
+                    <a class="navbar-brand d-flex align-items-center" href="home.html">
+                        <img src="img/logo.png" alt="Logo FinanSmart" width="50" height="50" class="me-2">
+                        <span class="fs-4 fw-bold">FinanSmart</span>
+                    </a>
         
-    </body>
+                    <!-- Botón hamburguesa (responsive) -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Opciones -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav d-flex align-items-center gap-2">
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="home.html" id="nav-home">
+                                    <i class="fa-solid fa-house"></i> HOME
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav" href="user.html" id="nav-perfil">
+                                    <i class="fa-solid fa-user"></i> PERFIL
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-nav active" href="config.html" id="nav-config">
+                                    <i class="fa-solid fa-gear"></i> CONFIGURACIÓN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
+            <!-- Main Content -->
+            <main>
+                
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer d-flex justify-content-between align-items-center px-4">
+                <a href="contactForm.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <i class="fa-regular fa-comments"></i>
+                    <span>Contacta con Nosotros</span>
+                </a>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-regular fa-registered"></i>
+                    <span>FinanSmart - UFV</span>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
