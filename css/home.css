@@ -71,16 +71,79 @@ body {
 
 /* ==== Contenido principal ==== */
 
-/* Responsive */
-@media (max-width: 992px) {
-    .user-data-balanced {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .modify-btn {
-      width: 80%;
-    }
+body {
+  margin: 0;
+  background-color: #212529;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  padding-top: 80px;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.bienvenida {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.info-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ahorro-section,
+.plan-section {
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1 1 45%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.ahorro-section h2,
+.plan-section h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+canvas {
+  width: 100%;
+  max-height: 300px;
+}
+
+.btn-nueva-entrada {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #0EAF21;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-nueva-entrada:hover {
+  background-color: #0a7917;
+}
+
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* ==== Footer ==== */
