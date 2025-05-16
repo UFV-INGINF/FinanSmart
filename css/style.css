@@ -1,5 +1,6 @@
 /* ==== Estilos generales ==== */
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -9,11 +10,12 @@ html, body {
     height: auto;
     overflow: hidden;
 }
-  
+
 
 .main-content {
     flex-grow: 1;
-    padding: 60px 30px 40px 30px; /* puedes ajustar el padding superior aquí */
+    padding: 60px 30px 40px 30px;
+    /* puedes ajustar el padding superior aquí */
 }
 
 
@@ -23,7 +25,8 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1030; /* Asegura que esté por encima de todo */
+    z-index: 1030;
+    /* Asegura que esté por encima de todo */
     width: 100%;
 }
 
@@ -32,14 +35,15 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 80px; /* Ajusta según la altura de tu navbar */
+    padding-top: 80px;
+    /* Ajusta según la altura de tu navbar */
 }
 
 /* ==== Navbar ==== */
 .navbar {
     background-color: #212529 !important;
     padding: 12px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand img {
@@ -64,7 +68,7 @@ body {
 }
 
 .btn-nav.active {
-    background-color: #0EAF21;
+    background-color: #187444;
     color: white;
     border-color: #ffffff;
 }
@@ -100,7 +104,7 @@ body {
 
 /* ==== Nueva Entrada ==== */
 .send {
-    background-color: #0EAF21;
+    background-color: #187444;
     color: white;
     font-weight: 600;
     border: none;
@@ -108,18 +112,19 @@ body {
     font-size: 15px;
     border-radius: 6px;
     transition: background-color 0.3s ease-in-out;
-    width: 520px; /* MISMO ANCHO que una tarjeta */
+    width: 520px;
+    /* MISMO ANCHO que una tarjeta */
     max-width: 520px;
     margin: auto;
     display: block;
-  }
-  
-  .send:hover {
-    background-color: #0a7917;
-  }
-  
-  /* Campos del formulario */
-  .campo-formulario {
+}
+
+.send:hover {
+    background-color: #125734;
+}
+
+/* Campos del formulario */
+.campo-formulario {
     background-color: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: 6px;
@@ -127,17 +132,17 @@ body {
     font-size: 15px;
     color: #333;
     font-family: 'Segoe UI', Arial, sans-serif;
-  }
-  
-  /* Título coherente */
-  .section-title {
+}
+
+/* Título coherente */
+.section-title {
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
     color: #333;
     font-family: 'Segoe UI', Arial, sans-serif;
-  }
-  
+}
+
 /* ==== Notificaciones ==== */
 .notification {
     display: flex;
@@ -175,7 +180,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #0EAF21;
+    color: #187444;
 }
 
 .form-check-label {
@@ -186,7 +191,7 @@ body {
 .msg-switch {
     margin-top: 5px;
     font-size: 14px;
-    color: #198754;
+    color: #187444;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -198,12 +203,14 @@ body {
     font-weight: bold;
     text-decoration: underline;
     color: #111;
-    margin-bottom: 0px; /* <-- reducido */
+    margin-bottom: 0px;
+    /* <-- reducido */
     text-align: left;
 }
 
 .section-group {
-    margin-top: 0; /* <-- quitamos espacio extra por si acaso */
+    margin-top: 0;
+    /* <-- quitamos espacio extra por si acaso */
 }
 
 
@@ -243,11 +250,11 @@ body {
 }
 
 /* ==== Botones tipo radio ==== */
-.btn-check:checked + .btn-outline-success,
-.btn-check:checked + .btn-outline-secondary {
-    background-color: #0EAF21;
+.btn-check:checked+.btn-outline-success,
+.btn-check:checked+.btn-outline-secondary {
+    background-color: #187444;
     color: white;
-    border-color: #0EAF21;
+    border-color: #187444;
 }
 
 .btn-outline-success,
@@ -262,9 +269,9 @@ body {
 
 .btn-outline-success:hover,
 .btn-outline-secondary:hover {
-    background-color: #0a7a17;
+    background-color: #187444;
     color: white;
-    border-color: #0a7a17;
+    border-color: #1f9a5a;
 }
 
 /* ==== Contenedor de 2 columnas (Datos personales / financieros -> USER) ==== */
@@ -277,28 +284,32 @@ body {
     font-weight: 500;
     color: #333;
     display: flex;
-    justify-content: flex-start;  /* <-- ALINEACIÓN IZQUIERDA */
-    align-items: center;          /* <-- CENTRADO VERTICAL */
+    justify-content: flex-start;
+    /* <-- ALINEACIÓN IZQUIERDA */
+    align-items: center;
+    /* <-- CENTRADO VERTICAL */
     text-align: left;
 }
-  
+
 .user-data-balanced {
     display: flex;
     justify-content: center;
-    gap: 60px; /* Reducción del espacio entre tarjetas */
+    gap: 60px;
+    /* Reducción del espacio entre tarjetas */
     flex-wrap: wrap;
 }
 
 .user-data-balanced .user-card {
     flex: 1 1 520px;
     max-width: 520px;
-    margin: 0; /* Elimina margen que añadía separación extra */
+    margin: 0;
+    /* Elimina margen que añadía separación extra */
 }
 
-  
+
 /* Botón central alineado con tarjetas */
 .modify-btn {
-    background-color: #0EAF21;
+    background-color: #187444;
     color: white;
     font-weight: 600;
     border: none;
@@ -306,26 +317,27 @@ body {
     font-size: 16px;
     border-radius: 8px;
     transition: background-color 0.3s ease-in-out;
-    width: 520px; /* MISMO ANCHO que una tarjeta */
+    width: 520px;
+    /* MISMO ANCHO que una tarjeta */
     max-width: 520px;
     margin: auto;
     display: block;
 }
-  
-  
+
+
 .modify-btn:hover {
-    background-color: #0a7917;
+    background-color: #135533;
 }
-  
+
 /* Responsive */
 @media (max-width: 992px) {
     .user-data-balanced {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .modify-btn {
-      width: 80%;
+        width: 80%;
     }
 }
 
@@ -337,7 +349,8 @@ body {
     width: 100%;
     font-size: 14px;
     font-family: 'Segoe UI', sans-serif;
-    margin-top: auto; /* hace que el footer se empuje al final */
+    margin-top: auto;
+    /* hace que el footer se empuje al final */
 }
 
 .footer i {

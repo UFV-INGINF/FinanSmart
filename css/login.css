@@ -5,11 +5,12 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: auto;
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
     background-color: #f5f5f5;
@@ -64,7 +65,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 40, 20, 0.8);
+    background-color: #187444;
 }
 
 h1 {
@@ -103,7 +104,7 @@ input {
 input:focus {
     outline: none;
     border-color: #00c853;
-    box-shadow: 0 0 0 2px rgba(0, 200, 83, 0.1);
+    box-shadow: 0 0 0 2px #187444;
 }
 
 .password-input {
@@ -124,7 +125,7 @@ input:focus {
 }
 
 .toggle-password:hover {
-    color: #00c853;
+    color: #115532;
 }
 
 .error-message {
@@ -136,7 +137,7 @@ input:focus {
 }
 
 .login-button {
-    background-color: #0EAF21;
+    background-color: #187444;
     color: white;
     border: none;
     border-radius: 6px;
@@ -150,7 +151,7 @@ input:focus {
 }
 
 .login-button:hover {
-    background-color: #00b34a;
+    background-color: #115532;
 }
 
 .login-button:disabled {
@@ -166,7 +167,7 @@ input:focus {
 }
 
 .register-link a {
-    color: #0EAF21;
+    color: #187444;
     text-decoration: none;
     font-weight: 500;
 }
@@ -185,8 +186,8 @@ input:focus {
 }
 
 .form-message.success {
-    background-color: rgba(0, 200, 83, 0.1);
-    color: #00c853;
+    background-color: #187444;
+    color: #ffffff;
 }
 
 .form-message.error {
