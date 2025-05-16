@@ -52,25 +52,30 @@
         </nav>
 
         <!-- Main Content -->
-        <main class="home-container">
-            <h1 class="bienvenida">
-                Bienvenido de vuelta, <span id="user-nombre">Usuario</span>
-            </h1>
+        <main class="home-content container py-5">
+            <h2 class="text-white fw-bold mb-5 text-center">Bienvenido de vuelta, <span id="user-nombre">Usuario</span>
+            </h2>
 
-            <div class="info-grid">
-                <!-- Bloque 1: Ahorro con gráfica -->
-                <section class="ahorro-section">
-                    <h2>Resumen de Ahorros</h2>
-                    <canvas id="graficaAhorros"></canvas>
-                    <a href="config.html" class="btn-nueva-entrada">Añadir nueva entrada</a>
-                </section>
+            <!-- Bloque superior: gráfico + info financiera -->
+            <div class="row g-4 mb-5">
+                <!-- Columna izquierda: gráfica -->
+                <div class="col-md-6">
+                    <section class="grafica-section">
+                        <h3>Tus ahorros mensuales</h3>
+                        <canvas id="graficaAhorros" class="w-100" height="250"
+                            aria-label="Gráfico de ahorro mensual"></canvas>
+                    </section>
+                </div>
 
-                <!-- Bloque 2: Plan financiero -->
-                <section class="plan-section">
-                    <h2>Tu Plan Financiero</h2>
-                    <p id="metodo">Método recomendado: <strong>...</strong></p>
-                    <p>Total Ahorrado: <strong id="total-ahorrado">...</strong></p>
-                </section>
+                <!-- Columna derecha: plan financiero -->
+                <div class="col-md-6">
+                    <section class="plan-info">
+                        <h3>Tu Plan Financiero</h3>
+                        <p><strong>Método recomendado:</strong> <span id="metodo">...</span></p>
+                        <p><strong>Total ahorrado:</strong> <span id="total-ahorrado">...</span></p>
+                        <a href="config.html" class="btn btn-success mt-4 w-100">Añadir nueva entrada</a>
+                    </section>
+                </div>
             </div>
 
             <section class="mt-5 px-4">
@@ -92,7 +97,7 @@
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <a href="#" class="btn btn-success w-100">Más información</a>
+                                <a href="metodoMenor.html" class="btn btn-success w-100">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +118,7 @@
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <a href="#" class="btn btn-success w-100">Más información</a>
+                                <a href="metodoMedio.html" class="btn btn-success w-100">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +139,7 @@
                                 </p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <a href="#" class="btn btn-success w-100">Más información</a>
+                                <a href="metodoMayor.html" class="btn btn-success w-100">Más información</a>
                             </div>
                         </div>
                     </div>
